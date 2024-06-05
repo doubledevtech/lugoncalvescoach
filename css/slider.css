@@ -1,0 +1,97 @@
+/* Descktop Setup */
+section.slider {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider__content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider__content input, .img__mobile {
+    display: none;
+}
+
+.slide__box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide__box img {
+    width: 100%;
+    /* height: 100%;        */
+}
+
+.navegation__manual, .navegation__auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 39.9%;
+    display:flex;
+    justify-content: center;
+}
+
+.navegation__manual .manual__btn, .navegation__auto div {
+    border: 2px solid #F9CC2B;
+    padding: 10px 20px 10px 20px;
+    border-radius: 35%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navegation__manual .manual__btn:not(:last-child), .navegation__auto div:not(:last-child) {
+    margin-right: 40px; /*10px */   
+}
+
+.navegation__manual .manual__btn:hover,
+#radio1:checked ~ .navegation__auto .auto__btn1,
+#radio2:checked ~ .navegation__auto .auto__btn2,
+#radio3:checked ~ .navegation__auto .auto__btn3,
+#radio4:checked ~ .navegation__auto .auto__btn4 {
+    background-color: #F9CC2B;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+/* mobile setup */
+
+@media screen and (max-width: 900px) {
+    .img__descktop {
+        display: none;
+    }
+
+    .img__mobile {
+        display: block;
+    }
+
+    .navegation__auto, .navegation__manual {
+        margin-top: 185%;
+    }
+    
+}
+
+
+
+ 
+
