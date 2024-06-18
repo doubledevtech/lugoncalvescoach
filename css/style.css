@@ -30,6 +30,13 @@ body {
     background: var(--body-bg-color);
 }
 
+.page {
+    width: 100vw;
+    max-width: 90em;
+    align-items: center;
+
+}
+
 
 header {
     background-color: #ffffff;   
@@ -79,6 +86,9 @@ a.button, input.newsletter.button {  /***/
 }
 
 .container {
+    max-width: 90em; /* 1440px */
+    margin: 0 auto;
+    padding: 0 1em;
     border: 2.5rem solid rgb(214, 214, 208);
     display: flex;
     flex-direction: column;
@@ -165,7 +175,7 @@ a.button, input.newsletter.button {  /***/
     width: 100%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -278,7 +288,7 @@ img {
     gap: 3px;  
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap-reverse; */
+    flex-wrap: wrap-reverse;
     justify-content: space-around; 
     background-color: #ffffff;   
 }
@@ -466,6 +476,7 @@ footer {
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
+    margin-bottom: 1.5rem;
     gap: 2rem; 
 }
 
@@ -579,7 +590,7 @@ footer {
 
 
 /* Dispositivos Small pequenos (telefones em paisagem, 576px e superiores)*/
-@media and (min-width: 320px) and (max-width: 576px) {
+@media and (min-width: 300px) and (max-width: 576px) {
     a.button {
         font-size: 14px;
     }

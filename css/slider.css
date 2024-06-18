@@ -1,10 +1,15 @@
 /* Descktop Setup */
 section.slider {
     width: 100%;
+    max-width: 90em;
     height: auto;
     margin: 0;
     padding: 0 !important;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+#programs {
+    overflow: hidden; 
 }
 
 .slider__content {
@@ -36,7 +41,7 @@ section.slider {
     /* padding: 8px 50px; */
     position: absolute;
     display:flex;
-    justify-content: center;
+    justify-content: center;    
     /* background-color: #FFF; */
     /* opacity: 0.1; */
     
@@ -51,7 +56,7 @@ section.slider {
 }
 
 .navegation__manual .manual__btn:not(:last-child), .navegation__auto div:not(:last-child) {
-    margin-right: 40px; /*10px */   
+    margin-right: 40px;     
 }
 
 .navegation__manual .manual__btn:hover,
