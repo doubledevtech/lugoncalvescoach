@@ -20,22 +20,25 @@
 
 <body>
     <div class="page">
-        <header>
-            <nav class="navbar__menu">
+        <header id="navbar">
+            <nav class="navbar__menu" id="navbar-menu">
                 <div class="navbar__logo">
                     <img id="logo" src="img/Logo/logo-yellow.png" alt="Logo" />
                     <!-- Substitua logo.png pelo caminho do seu logo -->
-                </div>
-                <ul class="menu__list">
+                </div>               
+                <button class="menu__sandwich" id="btn-mobile" aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu-list" aria-expanded="false"><span id="sandwich">&#9776</span></button>
+                <ul class="menu__list" id="menu-list" role="menu-list">
                     <li class="item"><a href="#about">sobre</a></li>
                     <li class="item"><a href="#programs">programas</a></li>
                     <li class="item"><a href="#testimonials">depoimentos</a></li>
                     <li class="item"><a href="#contact">contato</a></li>
+                    <li class="item" id="menu__btn"><a href="#login" class="button">Login</a></li> 
+                    <li class="item" id="item__btn"><a href="form.html" target="_blank" class="button">inscreva-se</a></li>
                 </ul>
-                <div class="item__btn"><a href="form.html" target="_blank" class="button">inscreva-se</a></div>
-                <div class="menu__btn">
+                <!-- <div class="menu__btn">
                     <a href="#login" class="button">Login</a>
                 </div>
+                <div class="item__btn"><a href="form.html" target="_blank" class="button">inscreva-se</a></div> -->
             </nav>
         </header>
         <main>
@@ -171,14 +174,7 @@
                     </div>
                     <section class="section__schedules">
                         <div class="card__schedules">
-                            <!-- <ul class="days__week" align="center" width="500" border="2px">
-                                <li>Segunda-feira: 8h - 18h</li>
-                                <li>Terça-feira: 8h - 18h</li>
-                                <li>Quarta-feira: 8h - 18h</li>
-                                <li>Quinta-feira: 8h - 18h</li>
-                                <li>Sexta-feira: 8h - 18h</li>
-                                <li>Sábado: 8h - 18h</li>
-                            </ul> -->
+                            
                             <h2>Horários de Atendimento</h2>
                             <table>
                                 <thead>
@@ -258,7 +254,8 @@
             </div>
         </footer>
     </div>
-    <script src="slide.js"></script>
+    <script src="js/mobileMenu.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+
+// Inputs and images do Slider
 let radio = document.querySelector('.manual__btn');
 let count = 1;
 
