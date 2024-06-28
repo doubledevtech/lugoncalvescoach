@@ -682,7 +682,8 @@ footer {
        background: #333;
     }
 
-    .navegation__manual, .navegation__auto {        
+    .navegation__manual, 
+    .navegation__auto {        
         margin-top: 42.5%;         
     }
 
@@ -766,8 +767,9 @@ footer {
         background: #232329;
      }
 
-    .navgation__manual {
-        margin-top: 42.5%;
+    .navgation__manual, 
+    .navegation__auto {
+        margin-top: 43.5%;
     }
 
     .manual__btn {
